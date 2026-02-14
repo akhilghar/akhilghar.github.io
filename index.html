@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akhil Gharpurey | Robotics & Control Systems</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="#">Akhil Gharpurey</a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="AkhilGharpurey_CurrentResume.pdf" target="_blank">Resume</a></li>
+        </ul>
+
+        <button id="themeToggle" class="theme-toggle">☀</button>
+    </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <div class="hero-container">
+        <h1>Robotics. Controls. Embedded Systems.</h1>
+        <p>
+            Mechanical Engineering Honors student at UT Austin designing
+            integrated autonomous systems combining control theory,
+            embedded firmware, and mechanical design.
+        </p>
+    </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
+    <div class="container narrow">
+        <h2>About</h2>
+        <p>
+            I build intelligent robotic systems that bridge hardware and software.
+            My work spans UAV autonomy, physiological sensing control systems,
+            embedded BLE firmware, and structural system validation through FEA.
+        </p>
+        <p>
+            I am particularly interested in control systems, autonomous vehicles,
+            and human-centered robotics.
+        </p>
+    </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section">
+    <div class="container">
+        <h2>Selected Projects</h2>
+
+        <div class="project">
+            <h3>
+                <a href="projects/tracker-drone.html">
+                    Tracker Drone Project →
+                </a>
+            </h3>
+            <p class="project-description">
+                Designed and built a lightweight quadcopter integrating real-time
+                OpenCV tracking with MATLAB-implemented LQR path-following control.
+                Achieved sub-5ms onboard image processing latency.
+            </p>
+            <div class="project-tech">
+                LQR · OpenCV · Raspberry Pi · Embedded Control · UAV Integration
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>
+                <a href="projects/human-centered-robotics.html">
+                    Human-Centered Robotics System →
+                </a>
+            </h3>
+            <p class="project-description">
+                Developed a bang-bang control system interpreting electrodermal
+                activity signals and transmitting PWM control over BLE using
+                nRF52832 firmware. Integrated Kalman-filtered IR tracking.
+            </p>
+            <div class="project-tech">
+                nRF52832 · BLE · PWM · Kalman Filtering · Embedded Firmware
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>
+                <a href="projects/hyperloop.html">
+                    Hyperloop Suspension & Braking →
+                </a>
+            </h3>
+            <p class="project-description">
+                Led vehicle dynamics design for a maglev pod. Validated structural
+                integrity through ANSYS static and transient simulations ensuring
+                safety factor >2.0. Designed failsafe pneumatic braking system.
+            </p>
+            <div class="project-tech">
+                ANSYS FEA · Structural Design · Pneumatics · FMEA · System Integration
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= RESEARCH ================= -->
+<section id="research" class="section">
+    <div class="container">
+        <h2>Research & Experience</h2>
+
+        <div class="project">
+            <h3>Human-Centered Robotics Laboratory</h3>
+            <p class="project-description">
+                Undergraduate Research Assistant under Dr. Luis Sentis.
+                Leading industry-funded robotics project integrating physiological
+                sensing, control systems, and real-time vision tracking.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>FlareX – System Integration Engineer</h3>
+            <p class="project-description">
+                Designed UAV antenna mount for stable wireless communication and
+                developed catapult launch mechanism minimizing lift-off attack angle variation.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="section">
+    <div class="container">
+        <h2>Technical Skills</h2>
+
+        <div class="skills-grid">
+
+            <div>
+                <h4>Control & Robotics</h4>
+                <p>LQR · PID · Kalman Filtering · Feedback Systems · Mechatronics</p>
+            </div>
+
+            <div>
+                <h4>Programming</h4>
+                <p>Python · MATLAB · C/C++ · Simulink · Linux</p>
+            </div>
+
+            <div>
+                <h4>Simulation & Design</h4>
+                <p>SolidWorks · ANSYS · KiCad · Structural & Thermal FEA</p>
+            </div>
+
+            <div>
+                <h4>Embedded Systems</h4>
+                <p>nRF52 · Raspberry Pi · BLE · PWM · ADC · Sensor Integration</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section contact">
+    <div class="container narrow">
+        <h2>Contact</h2>
+        <p>Austin, TX</p>
+        <p>
+            <a href="mailto:gharpureyakhil@gmail.com">
+                gharpureyakhil@gmail.com
+            </a>
+        </p>
+        <p>
+            <a href="https://github.com/akhilghar" target="_blank">GitHub</a> ·
+            <a href=https://www.linkedin.com/in/akhil-gharpurey-958930210/" target="_blank">LinkedIn</a>
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Akhil Gharpurey</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

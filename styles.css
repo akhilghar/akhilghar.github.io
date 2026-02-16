@@ -24,6 +24,12 @@ body {
     animation: fadeIn 0.8s ease;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* =========================================
    GLOBAL TYPOGRAPHY
 ========================================= */
@@ -197,6 +203,18 @@ a:hover {
     color: #6b7280;
     margin-top: 12px;
     letter-spacing: 0.5px;
+}
+
+.project-image-full {
+    width: 100%;
+    max-width: 850px;   /* controls how wide they can appear */
+    margin: 40px auto;
+    border-radius: 12px;
+}
+
+.image-grid-2 {
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
 }
 
 /* =========================================

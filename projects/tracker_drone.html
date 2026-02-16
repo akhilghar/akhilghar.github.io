@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tracker Drone | Akhil Gharpurey</title>
+<title>Tracker Drone Project | Akhil Gharpurey</title>
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="dark-mode">
+<body>
 
 <nav class="navbar">
     <div class="nav-container">
@@ -17,40 +17,147 @@
     </div>
 </nav>
 
+<!-- ================= HERO ================= -->
 <section class="hero">
     <div class="hero-container">
         <h1>Tracker Drone Project</h1>
-        <p>Autonomous UAV with real-time object tracking and LQR path control.</p>
+        <p>
+            Full-system UAV integrating modeling, LQR control, state estimation,
+            aerodynamic simulation, and hardware implementation.
+        </p>
+    </div>
+</section>
+
+<!-- ================= OVERVIEW ================= -->
+<section class="section">
+    <div class="container narrow">
+        <h2>System Overview</h2>
+        <p>
+            The Tracker Drone is a fully integrated quadcopter platform
+            designed for autonomous object tracking. The project combines
+            control theory, state estimation, aerodynamic modeling,
+            and embedded systems into a cohesive UAV architecture.
+        </p>
+    </div>
+</section>
+
+<!-- ================= CONTROL ARCHITECTURE ================= -->
+<section class="section">
+    <div class="container">
+        <h2>Control Architecture</h2>
+
+        <img src="controlDiagram.png" class="project-image-full">
+
+        <p class="caption">
+            Full-state feedback LQR controller with Kalman-based state estimation
+            and complementary IMU filtering.
+        </p>
+
+        <p>
+            A continuous-time state-space model of the quadcopter dynamics was
+            linearized and controlled using a Linear Quadratic Regulator (LQR).
+            The controller computes optimal state feedback gains minimizing
+            quadratic state and control effort cost.
+        </p>
+    </div>
+</section>
+
+<!-- ================= AERODYNAMIC MODELING ================= -->
+<section class="section">
+    <div class="container">
+        <h2>Aerodynamic Modeling</h2>
+
+        <div class="image-grid-2">
+            <div>
+                <img src="propellerCAD.png">
+                <p class="caption">Parametric propeller model used for CFD simulation.</p>
+            </div>
+
+            <div>
+                <img src="liftForce.png">
+                <p class="caption">Computed lift force convergence behavior.</p>
+            </div>
+        </div>
+
+        <img src="droneCAD.png" class="project-image-full">
+        <p class="caption">Full quadcopter mechanical assembly.</p>
+
+        <iframe 
+            width="100%" 
+            height="500" 
+            src="https://youtu.be/y_FfvixAfSU"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+
+        <p class="caption">
+            CFD airflow visualization over propeller surface.
+        </p>
+    </div>
+</section>
+
+<!-- ================= CONTROL RESPONSE ================= -->
+<section class="section">
+    <div class="container">
+        <h2>Closed-Loop Performance</h2>
+
+        <img src="droneDeviation.jpg" class="project-image-full">
+        <p class="caption">Position deviation under LQR control.</p>
+
+        <img src="droneRPM.jpg" class="project-image-full">
+        <p class="caption">Motor RPM response for prescribed trajectory.</p>
+
+        <img src="droneEffort.jpg" class="project-image-full">
+        <p class="caption">Control effort and torque response.</p>
+    </div>
+</section>
+
+<!-- ================= STATE ESTIMATION ================= -->
+<section class="section">
+    <div class="container">
+        <h2>State Estimation</h2>
+
+        <img src="droneEstimateResponse.jpg" class="project-image-full">
+        <p class="caption">Kalman-estimated state response.</p>
+
+        <img src="droneCLResponse.jpg" class="project-image-full">
+        <p class="caption">True closed-loop state response.</p>
+
+        <p>
+            Sensor fusion was implemented using a Kalman Filter to estimate
+            position and attitude states. A complementary filter was used to
+            combine gyroscope and accelerometer measurements for robust
+            orientation tracking.
+        </p>
     </div>
 </section>
 
 <section class="section">
+    <div class="container">
+        <h2>Demonstration Video</h2>
+
+        <iframe 
+            width="100%" 
+            height="500" 
+            src="https://youtu.be/nnoUkO54q6k"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+        <p class="caption">Visualized Response to Randomized Step References.</p>
+
+    </div>
+</section>
+
+<!-- ================= CONCLUSION ================= -->
+<section class="section">
     <div class="container narrow">
-
-        <h2>Overview</h2>
+        <h2>Results</h2>
         <p>
-            Designed and integrated a lightweight (<1kg) quadcopter platform
-            capable of autonomously following a target object in real time.
+            The integrated LQR + Kalman architecture demonstrated stable
+            tracking and rapid convergence with minimal steady-state error.
+            Simulation results validated control effort constraints and
+            real-time feasibility for embedded deployment.
         </p>
-
-        <h2>Control Architecture</h2>
-        <p>
-            Implemented a Linear Quadratic Regulator (LQR) in MATLAB
-            to stabilize and track desired trajectories.
-        </p>
-
-        <h2>Vision System</h2>
-        <p>
-            Used OpenCV on Raspberry Pi for low-latency (<5ms) image
-            processing and target tracking.
-        </p>
-
-        <h2>System Integration</h2>
-        <p>
-            Designed custom 14" x 14" quadcopter chassis integrating
-            flight controller, ESCs, battery, and onboard compute.
-        </p>
-
     </div>
 </section>
 

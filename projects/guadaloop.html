@@ -3,11 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Human-Centered Robotics | Akhil Gharpurey</title>
+<title>Vehicle Dynamics | Texas Guadaloop | Akhil Gharpurey</title>
 <link rel="stylesheet" href="../styles.css">
+<style>
+    .project-section {
+        margin-bottom: 70px;
+    }
+
+    .project-section h2 {
+        margin-bottom: 16px;
+    }
+
+    .project-image {
+        width: 100%;
+        border-radius: 14px;
+        margin: 22px 0 12px 0;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .caption {
+        font-size: 0.92rem;
+        color: #9ca3af;
+        margin-bottom: 0;
+    }
+
+    .contact-block p {
+        margin-bottom: 8px;
+    }
+
+    .braking-link {
+        color: #06b6d4;
+    }
+
+    @media (max-width: 768px) {
+        .project-image {
+            min-height: auto;
+        }
+    }
+</style>
 </head>
 
-<body class="dark-mode">
+<body>
 
 <nav class="navbar">
     <div class="nav-container">
@@ -19,41 +55,120 @@
 
 <section class="hero">
     <div class="hero-container">
-        <h1>Texas Guadaloop</h1>
-        <p>The University of Texas' premier Hyperloop research and innovation organization.</p>
+        <h1>Vehicle Dynamics: Maglev Pod Bogie</h1>
+        <p>Texas Guadaloop - Vehicle Dynamics Lead</p>
     </div>
 </section>
 
 <section class="section">
     <div class="container narrow">
 
-        <h2>Overview</h2>
-        <p>
-            As the lead of dynamic systems at Texas Guadaloop, I oversee the development of mechanical methods 
-            to ensure the pod's safety and stability during nominal operation and in failure cases. There are 
-            two key systems which I manage the design and manufacture of: a mechanical suspension chassis, 
-            known as a bogie, and an emergency pneumatic braking system. This page will showcase the highlights 
-            of my work on the bogie; to see my work on the pneumatic braking system, check out the page called 
-            "Braking Systems Engineer."
-        </p>
+        <div class="project-section">
+            <h2>Overview</h2>
+            <p>
+                As the lead of dynamic systems at Texas Guadaloop, I oversee the development of mechanical 
+                methods to ensure the pod's safety and stability during nominal operation and in failure cases. 
+                There are two key systems which I manage the design and manufacture of: a mechanical suspension 
+                chassis (known as a <strong>bogie</strong>) and an emergency pneumatic braking system.
+            </p>
+            <p>
+                This page showcases highlights of my work on the bogie design. For details on the pneumatic 
+                braking system, see the <a href="braking.html" class="braking-link">Braking Systems Engineer</a> page.
+            </p>
+        </div>
 
-        <h2>Embedded Firmware</h2>
-        <p>
-            Developed BLE-based control pipeline using nRF52832 to
-            transmit PWM signals in response to physiological input.
-        </p>
+        <div class="project-section">
+            <h2>SolidWorks CAD Model of Maglev Pod Bogie</h2>
+            <p>
+                This design features two complementary suspension modes: electromagnetic levitation units 
+                (known as <strong>yokes</strong>) and shock absorbers integrated into the triangular 
+                transverse bars (anti-roll bars).
+            </p>
+            <p>
+                The yokes utilize electromagnetic attractive forces to lift and stabilize the pod at a 
+                fixed heave point. The shock absorbers prevent modules from rolling about their surge axis 
+                and dissipate energy throughout the entire bogie structure.
+            </p>
+            <img src="images/guadaloop/bogie-cad-model.png" alt="SolidWorks CAD model of maglev pod bogie" class="project-image">
+            <p class="caption">Complete SolidWorks CAD assembly of the maglev pod bogie.</p>
+        </div>
 
-        <h2>Control Strategy</h2>
-        <p>
-            Implemented bang-bang control with filtering for real-time
-            signal interpretation.
-        </p>
+        <div class="project-section">
+            <h2>SolidWorks CAD Model of Anti-Roll Bar</h2>
+            <p>
+                Unlike conventional trains and vehicles which use torsion springs, maglev systems cannot 
+                employ traditional anti-roll mechanisms because there are no rotating bodies in contact with 
+                the track during nominal operations.
+            </p>
+            <p>
+                Instead, these anti-roll bars utilize spring-loaded shock absorbers to generate reaction 
+                forces against roll displacements and restore the bogie to stable equilibrium.
+            </p>
+            <img src="images/guadaloop/anti-roll-bar-cad.png" alt="SolidWorks CAD model of anti-roll bar assembly" class="project-image">
+            <p class="caption">Anti-roll bar with integrated shock absorber suspension design.</p>
+        </div>
 
-        <h2>Vision Tracking</h2>
-        <p>
-            Integrated IR-based tracking using OpenCV and Kalman filtering
-            for robust position estimation.
-        </p>
+        <div class="project-section">
+            <h2>Static Stress Finite Element Analysis - Nominal Operation</h2>
+            <p>
+                FEA stress analysis was performed to validate bogie performance under nominal operating 
+                conditions. This analysis confirms structural integrity and identifies regions of peak stress 
+                for design optimization.
+            </p>
+            <img src="images/guadaloop/fea-stress-analysis.png" alt="Static stress FEA visualization of bogie nominal operation" class="project-image">
+            <p class="caption">Von Mises stress distribution under nominal operating loads.</p>
+        </div>
+
+        <div class="project-section">
+            <h2>Static Displacement Finite Element Analysis - Nominal Operation</h2>
+            <p>
+                Displacement analysis shows how the bogie structure deforms under sustained load, validating 
+                the shock absorber performance and confirming the stability margins of the suspension system.
+            </p>
+            <img src="images/guadaloop/fea-displacement-analysis.png" alt="Static displacement FEA visualization of bogie nominal operation" class="project-image">
+            <p class="caption">Total displacement contour plot under nominal operating conditions.</p>
+        </div>
+
+        <div class="project-section">
+            <h2>Impulse Response Analysis for Top Module Beam</h2>
+            <p>
+                In failure scenarios, it is critical to analyze stresses and displacements to ensure minimal 
+                damage and rapid recovery to nominal operation. This analysis was performed using ANSYS 
+                Transient Structural Finite Element Analysis.
+            </p>
+            <p>
+                Due to limitations on the student version of ANSYS (maximum node count), full bogie analysis 
+                was performed in SolidWorks simulation, while detailed subsystem studies used ANSYS.
+            </p>
+            <video src="images/guadaloop/impulse-response-analysis.mp4" alt="Transient impulse response analysis for top module beam" class="project-image" controls>
+                Your browser does not support the video tag.
+            </video>
+            <p class="caption">Transient response of the top module beam to impulse loading.</p>
+        </div>
+
+        <div class="project-section">
+            <h2>The Maglev Bogie: A Proof of Concept</h2>
+            <p>
+                I authored this technical document as the principal engineer to outline the complete design 
+                and analysis of the maglev bogie suspension system. This represented a significant advancement 
+                over previous years' designs.
+            </p>
+            <p>
+                The document provides detailed coverage of the principal dynamics and kinematics governing the 
+                system, as well as integration requirements with other subsystems including the frame, track, 
+                and electronics.
+            </p>
+            <p>
+                <strong><a href="Maglev_Bogie_Proof_of_Concept.pdf">Read the full technical document (PDF)</a></strong>
+            </p>
+        </div>
+
+        <div class="project-section contact-block">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:gharpureyakhil@gmail.com">gharpureyakhil@gmail.com</a></p>
+            <p>Phone: (+1) 512-435-7476</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/akhil-gharpurey-958930210" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/akhil-gharpurey-958930210</a></p>
+        </div>
 
     </div>
 </section>

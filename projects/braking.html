@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Braking Systems Engineer | Texas Guadaloop | Akhil Gharpurey</title>
+<link rel="stylesheet" href="../styles.css">
+<style>
+	.project-section {
+		margin-bottom: 70px;
+	}
+
+	.project-section h2 {
+		margin-bottom: 16px;
+	}
+
+	.project-image {
+		width: 100%;
+		border-radius: 14px;
+		margin: 22px 0 12px 0;
+		border: 1px solid rgba(255, 255, 255, 0.08);
+	}
+
+	.caption {
+		font-size: 0.92rem;
+		color: #9ca3af;
+		margin-bottom: 0;
+	}
+
+	.video-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 24px;
+		margin-top: 20px;
+	}
+
+	.video-card {
+		background: rgba(20, 25, 45, 0.45);
+		border: 1px solid rgba(255, 255, 255, 0.08);
+		border-radius: 14px;
+		padding: 14px;
+	}
+
+	.video-card h3 {
+		font-size: 1rem;
+		margin-bottom: 10px;
+	}
+
+	.video-card video {
+		width: 100%;
+		border-radius: 10px;
+	}
+
+	.contact-block p {
+		margin-bottom: 8px;
+	}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+	<div class="nav-container">
+		<div class="nav-logo">
+			<a href="../index.html">Back</a>
+		</div>
+	</div>
+</nav>
+
+<section class="hero">
+	<div class="hero-container">
+		<h1>Braking Systems Engineer</h1>
+		<p>Texas Guadaloop - Emergency Pneumatic Braking System Design</p>
+	</div>
+</section>
+
+<section class="section">
+	<div class="container narrow">
+
+		<div class="project-section">
+			<h2>Overview</h2>
+			<p>
+				As a braking systems engineer, I designed an emergency braking system that halts the pod
+				in any failure event, regardless of hazard type. The architecture uses pneumatic logic so
+				that failure points across the pod are reflected directly in brake-system pressure behavior,
+				triggering brake caliper actuation and stopping the vehicle.
+			</p>
+			<p>
+				With this design, I achieved a braking distance of <strong>0.4 meters</strong> from a top
+				speed of <strong>5 m/s</strong>.
+			</p>
+		</div>
+
+		<div class="project-section">
+			<h2>Piping and Instrumentation Diagram (P&amp;ID)</h2>
+			<p>
+				The calipers are spring-loaded, which means the brakes actuate when insufficient air pressure
+				is present. Pressure transducers detect abnormal pressure values and flag failures within the
+				braking system. Normally open electronically actuated vents and valves then enable immediate
+				caliper engagement.
+			</p>
+			<img src="images/guadaloop/braking/p%26id.jpg" alt="Piping and instrumentation diagram of pneumatic braking system" class="project-image">
+			<p class="caption">P&amp;ID of the fail-safe pneumatic braking architecture.</p>
+		</div>
+
+		<div class="project-section">
+			<h2>Wheel Assembly Integration</h2>
+			<p>
+				The wheel assembly was designed to integrate directly with the braking hardware while
+				maintaining packaging constraints and serviceability. The geometry supports robust braking
+				contact and reliable operation under dynamic loads.
+			</p>
+			<img src="images/guadaloop/braking/wheelIntegration.png" alt="Wheel assembly integrated with braking subsystem" class="project-image">
+			<p class="caption">Wheel assembly integrated with the pneumatic braking system.</p>
+		</div>
+
+		<div class="project-section">
+			<h2>Prototype Pneumatic Braking Assembly</h2>
+			<p>
+				A full prototype was built to validate pneumatic routing, valve response, and fail-safe
+				behavior in representative operating conditions.
+			</p>
+			<img src="images/guadaloop/braking/prototype.png" alt="Prototype of pneumatic braking assembly" class="project-image">
+			<p class="caption">Prototype assembly used for functional validation and testing.</p>
+		</div>
+
+		<div class="project-section">
+			<h2>Brake Rotor Finite Element Analysis (FEA)</h2>
+			<p>
+				Simulation studies were used to evaluate rotor behavior across mechanical and thermal loading
+				cases. The following results include stress, deformation, strain, temperature, and thermal
+				factor of safety visualizations.
+			</p>
+
+			<div class="video-grid">
+				<div class="video-card">
+					<h3>Stress FEA of Brake Rotor</h3>
+					<video controls preload="metadata">
+						<source src="images/guadaloop/braking/brakeRotorStress.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<div class="video-card">
+					<h3>Deformation FEA of Brake Rotor</h3>
+					<video controls preload="metadata">
+						<source src="images/guadaloop/braking/brakeRotorDeformation.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<div class="video-card">
+					<h3>Strain FEA of Brake Rotor</h3>
+					<video controls preload="metadata">
+						<source src="images/guadaloop/braking/brakeRotorStrain.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<div class="video-card">
+					<h3>Thermal FEA of Brake Rotor</h3>
+					<video controls preload="metadata">
+						<source src="images/guadaloop/braking/brakeRotorTemperature.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<div class="video-card">
+					<h3>Thermal FOS of Brake Rotor</h3>
+					<video controls preload="metadata">
+						<source src="images/guadaloop/braking/brakeRotorThermalFOS.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</div>
+
+		<div class="project-section contact-block">
+			<h2>Contact</h2>
+			<p>Email: <a href="mailto:gharpureyakhil@gmail.com">gharpureyakhil@gmail.com</a></p>
+			<p>Phone: (+1) 512-435-7476</p>
+			<p>LinkedIn: <a href="https://www.linkedin.com/in/akhil-gharpurey-958930210" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/akhil-gharpurey-958930210</a></p>
+		</div>
+
+	</div>
+</section>
+
+<footer>
+	<p>© 2026 Akhil Gharpurey</p>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

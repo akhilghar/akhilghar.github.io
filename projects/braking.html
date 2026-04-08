@@ -48,7 +48,20 @@
 
 	.video-card video {
 		width: 100%;
+		display: block;
+		aspect-ratio: 16 / 9;
+		background: #050914;
 		border-radius: 10px;
+	}
+
+	.video-fallback {
+		font-size: 0.88rem;
+		margin-top: 10px;
+		color: #9ca3af;
+	}
+
+	.video-fallback a {
+		color: #06b6d4;
 	}
 
 	.contact-block p {
@@ -99,7 +112,7 @@
 				braking system. Normally open electronically actuated vents and valves then enable immediate
 				caliper engagement.
 			</p>
-			<img src="images/guadaloop/braking/p%26id.jpg" alt="Piping and instrumentation diagram of pneumatic braking system" class="project-image">
+			<img src="images/guadaloop/braking/p&id.jpg" alt="Piping and instrumentation diagram of pneumatic braking system" class="project-image">
 			<p class="caption">P&amp;ID of the fail-safe pneumatic braking architecture.</p>
 		</div>
 
@@ -135,37 +148,42 @@
 			<div class="video-grid">
 				<div class="video-card">
 					<h3>Stress FEA of Brake Rotor</h3>
-					<video controls preload="metadata">
-						<source src="images/guadaloop/braking/brakeRotorStress.mp4" type="video/mp4">
+					<video controls preload="metadata" playsinline>
+						<source src="./images/guadaloop/braking/brakeRotorStress.mp4" type="video/mp4">
 					</video>
+					<p class="video-fallback"><a href="./images/guadaloop/braking/brakeRotorStress.mp4" target="_blank" rel="noopener noreferrer">Open video in new tab</a></p>
 				</div>
 
 				<div class="video-card">
 					<h3>Deformation FEA of Brake Rotor</h3>
-					<video controls preload="metadata">
-						<source src="images/guadaloop/braking/brakeRotorDeformation.mp4" type="video/mp4">
+					<video controls preload="metadata" playsinline>
+						<source src="./images/guadaloop/braking/brakeRotorDeformation.mp4" type="video/mp4">
 					</video>
+					<p class="video-fallback"><a href="./images/guadaloop/braking/brakeRotorDeformation.mp4" target="_blank" rel="noopener noreferrer">Open video in new tab</a></p>
 				</div>
 
 				<div class="video-card">
 					<h3>Strain FEA of Brake Rotor</h3>
-					<video controls preload="metadata">
-						<source src="images/guadaloop/braking/brakeRotorStrain.mp4" type="video/mp4">
+					<video controls preload="metadata" playsinline>
+						<source src="./images/guadaloop/braking/brakeRotorStrain.mp4" type="video/mp4">
 					</video>
+					<p class="video-fallback"><a href="./images/guadaloop/braking/brakeRotorStrain.mp4" target="_blank" rel="noopener noreferrer">Open video in new tab</a></p>
 				</div>
 
 				<div class="video-card">
 					<h3>Thermal FEA of Brake Rotor</h3>
-					<video controls preload="metadata">
-						<source src="images/guadaloop/braking/brakeRotorTemperature.mp4" type="video/mp4">
+					<video controls preload="metadata" playsinline>
+						<source src="./images/guadaloop/braking/brakeRotorTemperature.mp4" type="video/mp4">
 					</video>
+					<p class="video-fallback"><a href="./images/guadaloop/braking/brakeRotorTemperature.mp4" target="_blank" rel="noopener noreferrer">Open video in new tab</a></p>
 				</div>
 
 				<div class="video-card">
 					<h3>Thermal FOS of Brake Rotor</h3>
-					<video controls preload="metadata">
-						<source src="images/guadaloop/braking/brakeRotorThermalFOS.mp4" type="video/mp4">
+					<video controls preload="metadata" playsinline>
+						<source src="./images/guadaloop/braking/brakeRotorThermalFOS.mp4" type="video/mp4">
 					</video>
+					<p class="video-fallback"><a href="./images/guadaloop/braking/brakeRotorThermalFOS.mp4" target="_blank" rel="noopener noreferrer">Open video in new tab</a></p>
 				</div>
 			</div>
 		</div>

@@ -284,6 +284,20 @@ footer {
     border-top: 1px solid rgba(255,255,255,0.05);
 }
 
+.footer-contact {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+.footer-contact a {
+    color: #9ca3af;
+}
+
+.footer-contact a:hover {
+    color: #06b6d4;
+}
+
 /* =========================================
    ANIMATIONS
 ========================================= */

@@ -38,14 +38,31 @@
     </div>
     <div class="container narrow">
 
-        <h2>Controller Block Diagram</h2>
+        <h2>Block Diagram of Control Architecture!</h2>
         <img class="project-image-full" src="images/ase370c/controllerBD-1.png" alt="Controller block diagram for ASE 370C project">
+        <p>
+            This diagram illustrates the flow of signals and information throughout the control system. We chose a nested loop configuration to allow for more precise control of the aircraft's dynamics. The outer loop is responsible for tracking the standoff distance between the target and ownship as well as deriving the reference state trajectories every 0.5 seconds, while the inner loop focuses on tracking the aircraft's attitude and ensuring smooth flight every 5 ms. This architecture allows for efficient handling of disturbances and uncertainties in the environment, ultimately improving the performance of the pursuit and interception system.
+        </p>
+
+        <a href="images/ase370c/ASE_370C___Supplemental_Information.pdf"><h3>For more information on the controller, click here!</h3></a>
+
+        <h2>Simulation Results</h2>
+        <div class="video-embed">
+            <iframe
+                src="https://youtube.com/embed/OujLNoFKfic"
+                title="Demonstration of Controller on Simulated Pursuit Scenario"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+        </div>
 
         <h2>Presentation Video</h2>
         <div class="video-embed">
             <iframe
                 src="https://www.youtube.com/embed/_ZDI5RFtnOo"
-                title="ASE 370C Presentation"
+                title="Final Presentation"
                 loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"

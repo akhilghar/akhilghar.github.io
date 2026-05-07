@@ -70,17 +70,18 @@ p {
 }
 
 a {
-    color: #67e8f9;
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
     transition: color 0.25s ease;
 }
 
 a:hover {
-    color: #22d3ee;
-    text-decoration-thickness: 2px;
+    color: #06b6d4;
 }
 
 .content-button {
-    text-decoration: none;
+    font-weight: 600;
 }
 
 /* =========================================
@@ -290,11 +291,11 @@ a:hover {
 }
 
 .presentation-link a {
-    color: #06b6d4;
+    color: inherit;
 }
 
 .presentation-link a:hover {
-    color: #67e8f9;
+    color: #06b6d4;
 }
 
 .image-grid-2 {

@@ -127,9 +127,10 @@
         <h2>Results</h2>
         <p>
             The integrated LQT + Kalman architecture demonstrated stable
-            tracking and rapid convergence with minimal steady-state error.
-            Simulation results validated control effort constraints and
-            real-time feasibility for embedded deployment.
+            tracking and rapid convergence with minimal steady-state error. 
+            However, it is important to note that the current implementation idealizes
+            the actuators. In reality, there would be motor dynamics and transience,
+            which are not simulated in this project. Future work will involve incorporating motor dynamics into the model and testing the controller on actual hardware to evaluate performance under real-world conditions.
         </p>
     </div>
 </section>

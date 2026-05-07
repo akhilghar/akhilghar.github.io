@@ -71,9 +71,7 @@ p {
 
 a {
     color: #67e8f9;
-    text-underline-offset: 0.16em;
-    text-decoration-thickness: 1.5px;
-    transition: color 0.25s ease, text-decoration-thickness 0.25s ease;
+    transition: color 0.25s ease;
 }
 
 a:hover {

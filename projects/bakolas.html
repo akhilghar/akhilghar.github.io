@@ -68,9 +68,9 @@
             of the control sequence perturbations (<a href="https://arxiv.org/abs/1509.01149">(Williams, 2015).</a>)
             We extend this framework to incorporate information on obstacle trajectories and terrain by augmenting the
             cost function. To evaluate dynamic obstacles, we implement parallelized Monte Carlo simulation of R=50 probabilistic
-            trajectories which are cumulatively evaluated to derive a risk metric which is then incorporated into the cost function. 
+            trajectories which are cumulatively evaluated to derive a risk metric which is then incorporated into the cost function (<a href="https://arxiv.org/abs/2506.21205">Trevisan, 2025</a>). 
             To evaluate terrain, we implement a fictitious camera sensor which derives a point cloud representation of the terrain in front of the robot at each time step.
-            This point cloud is then fed into two traversability evaluators. The first is a Bayesian classifier which evaluates the traversability 
+            This point cloud is then fed into two traversability evaluators, similar to the architecture posed in <a href="https://www.researchgate.net/publication/220122345_Autonomous_Rover_Navigation_on_Unknown_Terrains">Lacroix, 2002</a>. The first is a Bayesian classifier which evaluates the traversability 
             of the stitched terrain based on its expected elevation and slope, as well as its uncertainty. 
             The second is a digital elevation map (DEM) which derives an expectation on the slope and elevation of the terrain with some confidence.
             For points sampled several times over, the DEM stitches these samples together to derive a more precise and accurate estimate of the terrain.

@@ -26,12 +26,12 @@
 		width: 100%;
 		border-radius: 14px;
 		margin: 22px 0 12px 0;
-		border: 1px solid rgba(255, 255, 255, 0.08);
+		border: 1px solid var(--border);
 	}
 
 	.caption {
 		font-size: 0.92rem;
-		color: #9ca3af;
+		color: var(--text-muted);
 		margin-bottom: 0;
 	}
 
@@ -43,8 +43,8 @@
 	}
 
 	.video-card {
-		background: rgba(20, 25, 45, 0.45);
-		border: 1px solid rgba(255, 255, 255, 0.08);
+		background: var(--surface);
+		border: 1px solid var(--border);
 		border-radius: 14px;
 		padding: 14px;
 	}
@@ -65,11 +65,11 @@
 	.video-fallback {
 		font-size: 0.88rem;
 		margin-top: 10px;
-		color: #9ca3af;
+		color: var(--text-muted);
 	}
 
 	.video-fallback a {
-		color: #06b6d4;
+		color: var(--link-accent);
 	}
 
 	.contact-block p {
@@ -85,6 +85,9 @@
 		<div class="nav-logo">
 			<a href="../index.html">Back</a>
 		</div>
+		<button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle theme">
+			☀
+		</button>
 	</div>
 </nav>
 

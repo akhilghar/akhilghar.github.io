@@ -139,6 +139,31 @@ a:hover {
     max-width: 750px;
 }
 
+.about-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(260px, 0.9fr);
+    gap: 40px;
+    align-items: start;
+}
+
+.about-text {
+    min-width: 0;
+}
+
+.about-photo-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.about-photo {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 18px;
+    border: 1px solid var(--border);
+    box-shadow: var(--card-shadow);
+    object-fit: cover;
+}
+
 /* =========================================
    NAVBAR
 ========================================= */
@@ -432,6 +457,15 @@ footer {
 
     .section {
         padding: 56px 20px;
+    }
+
+    .about-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .about-photo {
+        max-width: 320px;
     }
 
     .presentation-embed,

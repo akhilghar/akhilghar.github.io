@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tracker Drone Project | Akhil Gharpurey</title>
+<link rel="icon" type="image/png" href="../—Pngtree—black drone silhouette with camera_6024920.png">
 <link rel="stylesheet" href="../styles.css">
 </head>
 
@@ -14,6 +15,9 @@
         <div class="nav-logo">
             <a href="../index.html">Back</a>
         </div>
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle theme">
+            ☀
+        </button>
     </div>
 </nav>
 
@@ -46,7 +50,7 @@
     <div class="container">
         <h2>Control Architecture</h2>
 
-        <img src="controlDiagram.png" class="project-image-full">
+        <img src="images/tracker-drone/controlDiagram.png" class="project-image-full">
 
         <p class="caption">
             Full-state feedback LQR controller with Kalman-based state estimation
@@ -69,17 +73,17 @@
 
         <div class="image-grid-2">
             <div>
-                <img src="propellerCAD.png">
+                <img src="images/tracker-drone/propellerCAD.png">
                 <p class="caption">Parametric propeller model used for CFD simulation.</p>
             </div>
 
             <div>
-                <img src="liftForce.png">
+                <img src="images/tracker-drone/liftForce.png">
                 <p class="caption">Computed lift force convergence behavior.</p>
             </div>
         </div>
 
-        <img src="droneCAD.png" class="project-image-full">
+        <img src="images/tracker-drone/droneCAD.png" class="project-image-full">
         <p class="caption">Full quadcopter mechanical assembly.</p>
 
         <iframe 
@@ -101,48 +105,21 @@
     <div class="container">
         <h2>Closed-Loop Performance</h2>
 
-        <img src="droneDeviation.jpg" class="project-image-full">
+        <img src="images/tracker-drone/droneStates.png" class="project-image-full">
         <p class="caption">Position deviation under LQR control.</p>
 
-        <img src="droneRPM.jpg" class="project-image-full">
+        <img src="images/tracker-drone/droneRPM.png" class="project-image-full">
         <p class="caption">Motor RPM response for prescribed trajectory.</p>
 
-        <img src="droneEffort.jpg" class="project-image-full">
-        <p class="caption">Control effort and torque response.</p>
-    </div>
-</section>
-
-<!-- ================= STATE ESTIMATION ================= -->
-<section class="section">
-    <div class="container">
-        <h2>State Estimation</h2>
-
-        <img src="droneEstimateResponse.jpg" class="project-image-full">
-        <p class="caption">Kalman-estimated state response.</p>
-
-        <img src="droneCLResponse.jpg" class="project-image-full">
-        <p class="caption">True closed-loop state response.</p>
-
-        <p>
-            Sensor fusion was implemented using a Kalman Filter to estimate
-            position and attitude states. A complementary filter was used to
-            combine gyroscope and accelerometer measurements for robust
-            orientation tracking.
-        </p>
+        <img src="images/tracker-drone/droneEffort.png" class="project-image-full">
+        <p class="caption">Control Effort (Forces + Torques) imposed on Quadcopter.</p>
     </div>
 </section>
 
 <section class="section">
     <div class="container">
-        <h2>Demonstration Video</h2>
-
-        <iframe 
-            width="100%" 
-            height="500" 
-            src="https://youtube.com/embed/nnoUkO54q6k"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
+        <h2>Demonstration Animation</h2>
+        <img src="images/tracker-drone/droneTravel.gif" class="project-image-full">
         <p class="caption">Visualized Response to Randomized Step References.</p>
 
     </div>
@@ -153,10 +130,11 @@
     <div class="container narrow">
         <h2>Results</h2>
         <p>
-            The integrated LQR + Kalman architecture demonstrated stable
-            tracking and rapid convergence with minimal steady-state error.
-            Simulation results validated control effort constraints and
-            real-time feasibility for embedded deployment.
+            The integrated LQT + Kalman architecture demonstrated stable
+            tracking and rapid convergence with minimal steady-state error. 
+            However, it is important to note that the current implementation idealizes
+            the actuators. In reality, there would be motor dynamics and transience,
+            which are not simulated in this project. Future work will involve incorporating motor dynamics into the model and testing the controller on actual hardware to evaluate performance under real-world conditions.
         </p>
     </div>
 </section>

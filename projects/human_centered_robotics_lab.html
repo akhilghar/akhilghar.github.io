@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Human-Centered Robotics Laboratory | Akhil Gharpurey</title>
+<link rel="icon" type="image/png" href="../—Pngtree—black drone silhouette with camera_6024920.png">
 <link rel="stylesheet" href="../styles.css">
 <style>
     .project-section {
@@ -18,13 +19,13 @@
         width: 100%;
         border-radius: 14px;
         margin: 22px 0 12px 0;
-        border: 1px solid rgba(255, 255, 255, 0.08);
+        border: 1px solid var(--border);
     }
 
     .project-video {
         width: 100%;
         min-height: 420px;
-        border: 1px solid rgba(255, 255, 255, 0.08);
+        border: 1px solid var(--border);
         border-radius: 14px;
         margin: 22px 0 12px 0;
         background: #000;
@@ -32,7 +33,7 @@
 
     .caption {
         font-size: 0.92rem;
-        color: #9ca3af;
+        color: var(--text-muted);
         margin-bottom: 0;
     }
 
@@ -55,6 +56,9 @@
         <div class="nav-logo">
             <a href="../index.html">Back</a>
         </div>
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle theme">
+            ☀
+        </button>
     </div>
 </nav>
 
@@ -81,8 +85,6 @@
                 Because this work is part of an ongoing innovation effort, this page highlights
                 selected mechanical and electrical design elements from the prototype.
             </p>
-            <img src="images/hcrl/overview-prototype.jpg" alt="Human-centered robotics lab prototype" class="project-image">
-            <p class="caption">Prototype overview from the Human-Centered Robotics Laboratory project.</p>
         </div>
 
         <div class="project-section">

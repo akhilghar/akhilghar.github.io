@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASE 370C: Feedback Control Systems | Akhil Gharpurey</title>
+<link rel="icon" type="image/png" href="../—Pngtree—black drone silhouette with camera_6024920.png">
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="dark-mode">
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="../index.html">Back</a>
+        </div>
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle theme">
+            ☀
+        </button>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-container">
+        <h1>ASE 370C: Feedback Control Systems - Spring 2026</h1>
+        <p>Real-time Feedback Control for autonomous aircraft pursuit and interception systems.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container narrow">
+
+        <h2>Overview</h2>
+        <p>
+            The aim of this project is to develop a feedback control system for
+            an autonomous aircraft pursuit and interception scenario. The project focuses
+            on real-time implementation of control algorithms to achieve precise and
+            efficient target tracking and interception.
+        </p>
+
+    </div>
+    <div class="container narrow">
+
+        <h2>Block Diagram of Control Architecture!</h2>
+        <img class="project-image-full" src="images/ase370c/controllerBD-1.png" alt="Controller block diagram for ASE 370C project">
+        <p>
+            This diagram illustrates the flow of signals and information throughout the control system. We chose a nested loop configuration to allow for more precise control of the aircraft's dynamics. The outer loop is responsible for tracking the standoff distance between the target and ownship as well as deriving the reference state trajectories every 0.5 seconds, while the inner loop focuses on tracking the aircraft's attitude and ensuring smooth flight every 5 ms. This architecture allows for efficient handling of disturbances and uncertainties in the environment, ultimately improving the performance of the pursuit and interception system.
+        </p>
+
+        <a href="images/ase370c/ASE_370C___Supplemental_Information.pdf"><h3>For more information on the controller, click here!</h3></a>
+
+        <h2>Simulation Results</h2>
+        <div class="video-embed">
+            <iframe
+                src="https://youtube.com/embed/OujLNoFKfic"
+                title="Demonstration of Controller on Simulated Pursuit Scenario"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <h2>Presentation Video</h2>
+        <div class="video-embed">
+            <iframe
+                src="https://www.youtube.com/embed/_ZDI5RFtnOo"
+                title="Final Presentation"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Akhil Gharpurey</p>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

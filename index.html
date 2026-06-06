@@ -21,6 +21,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#coursework">Coursework</a></li>
+            <li><a href="#my_love_for_math">My Love for Math</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="Akhil_Gharpurey_Resume.pdf" target="_blank">Resume</a></li>
             <li><a href="#resources">Learning Resources</a></li>
@@ -35,7 +36,7 @@
 <!-- ================= HERO ================= -->
 <section class="hero">
     <div class="hero-container">
-        <h1>Akhil Gharpurey - Mechanical Engineering and Robotics</h1>
+        <h1>Akhil Gharpurey - Mechanical Engineer and Controls Enthusiast</h1>
         <p>
             Welcome to my website! 
         </p>
@@ -49,7 +50,7 @@
             <div class="about-text">
                 <h2>About</h2>
                 <p>
-                    Welcome to my portfolio! I am a current second-year mechanical engineering student at the University of Texas at Austin. Ever since I was a kid, I 
+                    Welcome to my portfolio! I am a (rising) fourth-year mechanical engineering student at the University of Texas at Austin. Ever since I was a kid, I 
                     had been fascinated by two things in life: numbers and Legos. When I discovered mechanical engineering as a career path, I realized it was a 
                     perfect mesh of my two biggest interests in life, compelling me to explore this new world. After getting into UT, I began to see the true versatility 
                     of mechanical engineering: people with backgrounds ranging from materials science to aeronautical vehicles flooded the faculty and research facilities. 
@@ -185,11 +186,24 @@
         </div>
 
         <div class="project">
-            <h3>ME 338: Machine Elements - Spring 2025</h3>
+            <h3><a href='projects/me338.html'>ME 338: Machine Elements - Spring 2025</a></h3>
             <p class="project-description">
                 Design and implementation of a 3D-printed remote control (RC) car.
             </p>
         </div>
+    </div>
+</section>
+
+<section id="my_love_for_math" class="section">
+    <div class="container">
+        <h2>
+            <a href="projects/my_love_for_math.html">
+                My Love for Math →
+            </a>
+        </h2>
+        <p class="project-description">
+            A collection of my favorite case studies in differential equations, data fitting, mechanics, and fluid dynamics.
+        </p>
     </div>
 </section>
 
@@ -225,25 +239,88 @@
         <p>
             If you're interested in learning more about the fields of control systems, robotics, or mechanical engineering in general, here are some resources that I found helpful during my learning journey:
         </p>
-        <h3>Robotics Control Systems</h3>
+        <h3>Robotics + Control Systems</h3>
         <ul> <!-- Steve Brunton, Brian Douglas, Astrom/Murray, Kevin Lynch -->
-            <li><a href="https://www.coursera.org/learn/control-systems" target="_blank">Control of Mobile Robots - Coursera</a></li>
-            <li><a href="https://www.youtube.com/playlist?list=PLUMWjy5jgkKQf9uHjYqEJqjB4sZgYl" target="_blank">Control Systems Lectures - YouTube</a></li>
-            <li><a href="https://people.duke.edu/~hpgavin/SystemID/References/Astrom-Feedback-2006.pdf" target="_blank">Feedback Systems - Book</a></li>
+            <li>
+                <a href="https://www.youtube.com/playlist?list=PLggLP4f-rq02vX0OQQ5vrCxbJrzamYDfx" target="_blank">Foundations of Modern Robotics - K. Lynch, F. Park</a>
+                <p>This playlist is a video supplemental to the Modern Robotics textbook. It covers topics such as twists/wrenches, forward/inverse kinematics, spatial transformations, controls, and motion planning. Highly recommend for the fundamentals, but I would recommend looking elsewhere for in-depth analyses.</p>
+            </li>
+            <li>
+                <a href="https://youtube.com/playlist?list=PLMrJAkhIeNNR20Mz-VpzgfQs5zrYi085m&si=JU0JD402hNPeh6ff" target="_blank">Control Bootcamp - S. Brunton</a>
+                <p>This playlist is a rigorous introduction to classical and optimal control theory. You will learn foundations of linear systems, feedback controllers, stability analysis, optimal controllers and estimators, and some frequency-domain control design and analysis methods. There are also some cool examples Dr. Brunton shows in MATLAB throughout the course, which I recommend looking at if you are interested in implementation!</p>
+            </li>
+            <li>
+                <a href="https://people.duke.edu/~hpgavin/SystemID/References/Astrom-Feedback-2006.pdf" target="_blank">Feedback Systems - K. Åström, R. Murray</a>
+                <p>This textbook is a beautiful introduction to control systems, covering both classical and modern control theory with a focus on feedback systems. The authors contextualize every section with some examples and provide some advanced topics such as LQR and Kalman Filters if you are interested in exploring control theory further.</p>
+            </li>
+            <li>
+                <a href="https://youtube.com/playlist?list=PLBFsvLJJNYJ2K0Kt2ULF5-0eLXavhQB5i&si=jAiLIwgNec9IWqpy" target="_blank">MATLAB Tech Talks - B. Douglas</a>
+                <p>I would be remiss if I wanted to provide great methods of learning advanced control systems without mentioning Brian Douglas. This playlist goes incredibly in-depth to several of the topics covered by Dr. Brunton and the Astrom-Murray textbook. Additionally, you will see sub-series on robust control systems, adaptive control, and drone controller design. Highly recommend looking at this for anyone looking to take their controls knowledge to the next level.</p>
+            </li>
+        </ul>
+
+        <h3>Mathematical Foundations</h3>
+        <ul>
+            <li>
+                <a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab" target="_blank">Essence of Linear Algebra - 3Blue1Brown</a>
+                <p>This playlist provides a visual and intuitive understanding of linear algebra concepts and ultimately transforms your way of thinking. If I didn't have this resource, all the problems I faced as a whole would have been 20,000x harder.</p>
+            </li>
+            <li>
+                <a href="https://youtube.com/playlist?list=PLZHQObOWTQDNPOjrT6KVlfJuKtYTftqH6&si=XPbUbKCGUTlSIE0J" target="_blank">Differential Equations - 3Blue1Brown</a>
+                <p>An absolutely beautiful playlist explaining differential equations concepts visually and intuitively. The first video alone made me fall in love with the subject, which drove me to become a controls enthusiast.</p>
+            </li>
+            <li>
+                <a href="https://youtube.com/playlist?list=PLoROMvodv4rMJqxxviPa4AmDClvcbHi6h&si=nCZoTO9aGsUlpu65" target="_blank">Convex Optimization I - S. Boyd</a>
+                <p>As I venture further into the world of optimization and controls, I have found myself turning to convex optimization methods frequently. This playlist is incredibly helpful for understanding the fundamentals of optimization and provides several examples, such as regularized least squares, support vector machines, and portfolio optimization. I will say, Dr. Boyd does move quite fast through the lecture, so use the pause button to your advantage.</p>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=1wSE6iQiScg" target="_blank">The Finite Element Method Explained in 3 Levels of Difficulty - Dr. Simulate</a>
+                <p>This video explains the mathematical fundamentals behind what ANSYS is actually doing in the background of your finite element simulations. I have found this video very informative and helpful in refining my simulations.</p>
+            </li>
+            <li>
+                <a href="https://youtube.com/playlist?list=PLMrJAkhIeNNR3sNYvfgiKgcStwuPSts9V&si=vEhu6mKRBkmKUvxk" target="_blank">Probability Bootcamp - S. Brunton</a>
+                <p>This playlist provides a comprehensive introduction to probability theory, covering essential concepts and techniques for understanding randomness and uncertainty.</p>
+            </li>
+        </ul>
+
+        <h3>Machine Learning and Data Science</h3>
+        <ul>
+            <li>
+                <a href="https://introml.mit.edu/notes/" target="_blank">6.390 - Introduction to Machine Learning (MIT)</a>
+                <p>Extremely useful online textbook for learning fundamentals of machine learning methods, extending from basic concepts such as regression and classification to more advanced topics like neural networks and reinforcement learning.</p>
+            </li>
+            <li>
+                <a href="http://neuralnetworksanddeeplearning.com/" target="_blank">Neural Networks and Deep Learning - M. Nielsen</a>
+                <p>This online book provides an intuitive understanding of neural networks and deep learning, with practical examples and exercises to reinforce learning.</p>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" target="_blank">Neural Networks - 3Blue1Brown</a>
+                <p>Great visualization and intuitive explanations of neural networks and transformers.</p>
+            </li>
+            <li>
+                <a href="https://youtube.com/playlist?list=PLMrJAkhIeNNT14qn1c5qdL29A1UaHamjx&si=EcIYkLWOIjO1OQ7S" target="_blank"> Introduction to Statistics and Data Analysis - S. Brunton</a>
+                <p>It's honestly pretty surprising how foundational Bayesian statistics is to machine learning. This is a very helpful playlist if you want a thorough understanding of the mathematical underpinnings of the subject.</p>
+            </li>
         </ul>
 
         <h3>Mechanical Design & Simulation</h3>
         <ul> <!-- Shigley's, FEM, The Efficient Engineer -->
-            <li><a href="https://www.coursera.org/learn/mechanical-design" target="_blank">Mechanical Design and Product Development - Coursera</a></li>
-            <li><a href="https://www.youtube.com/playlist?list=PLUMWjy5jgkKQf9uHjYqEJqjB4sZgYl" target="_blank">ANSYS Tutorials - YouTube</a></li>
-            <li><a href="https://www.solidworks.com/sw/resources/getting-started.htm" target="_blank">SolidWorks Resources</a></li>
-        </ul>
-
-        <h3>Programming & Embedded Systems</h3>
-        <ul> <!-- Valvano, nRF52832 Documentation, Other C Tutorials -->
-            <li><a href="https://www.youtube.com/playlist?list=PLUMWjy5jgkKQf9uHjYqEJqjB4sZgYl" target="_blank">C++ Programming Tutorials - YouTube</a></li>
-            <li><a href="https://www.youtube.com/playlist?list=PLUMWjy5jgkKQf9uHjYqEJqjB4sZgYl" target="_blank">Embedded Systems Tutorials - YouTube</a></li>
-            <li><a href="https://devzone.nordicsemi.com/f/nordic-q-a/65852/nrf52-tutorials-for-beginners" target="_blank">nRF52 Tutorials for Beginners</a></li>
+            <li>
+                <a href="https://dl.icdst.org/pdfs/files3/ad7608c18e740b0e402c025fa3187de8.pdf" target="_blank">Shigley's Mechanical Engineering Design - 10th Edition</a>
+                <p>Want to get ahead in mechanical design? This textbook is perfect for you. It is a comprehensive book on mechanics, materials, and machine design, and provides additional insight on advanced topics such as Finite Element Analysis (FEA) and Geometric Dimensioning & Tolerancing (GD&T).</p>
+            </li>
+            <li>
+                <a href="https://www.solidworks.com/sw/resources/getting-started.htm" target="_blank">SolidWorks Resources</a>
+                <p>Documentation for SolidWorks so you stop freaking out when that dreaded error noise pops up after performing a mate in your assembly.</p>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@TheEfficientEngineer" target="_blank">The Efficient Engineer</a>
+                <p>Great YouTube channel for learning about fundamentals for mechanical design. He explains design theory concepts very clearly and provides great visuals so your mechanics of materials classes become way easier.</p>
+            </li>
+            <li>
+                <a href="https://youtube.com/playlist?list=PLtj-yB-zGzytXzza6UPrcpsRjpreX_WIV&si=hONF-yjI_mwNed1U" target="_blank">ANSYS Tutorials for Beginners</a>
+                <p>Great resource for learning ANSYS as a Finite Element Simulation tool. They also provide you with geometry files so you can follow them yourself!</p>
+            </li>
         </ul>
     </div>
 </section>

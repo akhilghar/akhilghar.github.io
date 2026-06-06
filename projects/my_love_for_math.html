@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Love for Math | Akhil Gharpurey</title>
+<link rel="icon" type="image/png" href="../—Pngtree—black drone silhouette with camera_6024920.png">
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="../index.html">Back</a>
+        </div>
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle theme">
+            ☀
+        </button>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-container">
+        <h1>My Love for Math</h1>
+        <p>
+            A collection of my favorite case studies in differential equations,
+            data fitting, mechanics, and fluid dynamics.
+        </p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container narrow">
+        <h2>Why This Page Exists</h2>
+        <p>
+            Math was always my favorite subject since kindergarten. In elementary school, I treated every multiplication worksheet like a race, raised my hand as high as possible whenever the teacher would ask a question, and try my absolute hardest to learn as much math as possible. When I first used my whiteboard to write out my Algebra II homework in high school, I never went back to pen and paper. It was at this point where math was more than my favorite subject - it was a form of art that I was dying to master.
+        </p>
+        <p>
+            Without question, my favorite topic in mathematics is differential equations. My first introduction to differential equations was quite boring; all I could make of it was that variables need to be separated, and the "+C" is dependent on an initial condition. This premonition changed drastically when I took ME 318M (Programming and Engineering Computational Methods) with Dr. Dragan Djurdjanovic. The primary focus of this class was utilizing numerical methods to determine approximate solutions to problems which pose significantly difficulty in analytical cases. In this class, I got to witness firsthand the extent to which differential equations eloquently explain the world around us. I have featured some of my favorite use cases of differential equations which we got to analyze on this page. As I am a huge math nerd, I wholeheartedly enjoyed a great majority of Dr. Djurdjanovic's class, and I hope you enjoy seeing all the work I got to do here! Also, note that my favorite case studies are not limited to those modeled by differential equations - I also really liked curve fitting and solving systems of nonlinear equations.
+        </p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>A 2-DoF (Degrees of Freedom) Mass-Spring Harmonic Oscillator</h2>
+        <p>
+            Vibrations are a vital parameter in engineering design, as you want to ensure that oscillations never reach excessive displacements, known as resonance. In this case, resonance is not achieved, but the displacements for each spring are still quite large.
+        </p>
+
+        <img src="images/mathlove/springsInSeries.jpg" class="project-image-full" alt="2-DoF mass-spring oscillator displacement and velocity plots">
+        <p class="caption">
+            Time-domain positions and velocities for both masses in a coupled spring system.
+        </p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>Curve-Fitting Rockwell B Hardness along an Annealed Brass Sample</h2>
+        <p>
+            I used polynomial curve fitting to interpret data from a materials engineering
+            lab and compare fit quality across model degrees.
+        </p>
+
+        <img src="images/mathlove/brassHardness.jpg" class="project-image-full" alt="Rockwell B hardness curve fitting and residual analysis">
+        <p class="caption">
+            Hardness profile fit and residual-sum comparison used for model selection.
+        </p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>2D Buckling Analysis of a Column</h2>
+        <p>
+            The boundary-value methodology for this problem closely resembles finite-element
+            modeling in one-dimensional input spaces, which made this case especially interesting.
+        </p>
+
+        <img src="images/mathlove/buckling.jpg" class="project-image-full" alt="Buckling deformation profile of a 2D column">
+        <p class="caption">
+            Calculated buckling mode shape over column length.
+        </p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>24-Inch Wind Tunnel Crossflow Analysis for a Cylinder</h2>
+
+        <h3>Static Pressure Profiles Downstream and Upstream of the Cylinder</h3>
+        <p>Observed for an average airflow velocity of 20 m/s in a 24-inch wind tunnel.</p>
+        <img src="images/mathlove/staticPressure.jpg" class="project-image-full" alt="Upstream and downstream static pressure profiles around a cylinder">
+        <p class="caption">
+            Static pressure variation along the probe traverse for upstream and downstream measurements.
+        </p>
+
+        <h3>Air Velocity Profiles Downstream and Upstream of the Cylinder</h3>
+        <p>Observed for an average airflow velocity of 20 m/s in a 24-inch wind tunnel.</p>
+        <img src="images/mathlove/velocityProfile.jpg" class="project-image-full" alt="Upstream and downstream air velocity profiles around a cylinder">
+        <p class="caption">
+            Velocity-field comparison showing wake influence and asymmetric flow behavior.
+        </p>
+
+        <h3>Static Pressure Distribution about the Cylinder Surface</h3>
+        <p>Observed for airflow velocities of 10 m/s and 20 m/s.</p>
+        <img src="images/mathlove/pressureDistribution.jpg" class="project-image-full" alt="Static pressure distribution around the cylinder at two velocities">
+        <p class="caption">
+            Surface pressure distribution versus angle for two freestream conditions.
+        </p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>Mohr's Circle Generator for any Given 3D Stress State</h2>
+        <p>
+            Example input stress state:
+            sigma_x = 2, sigma_y = 18, sigma_z = 6,
+            tau_xy = -4, tau_yz = 5, tau_xz = 9.
+        </p>
+        <p>
+            Resulting principal normal and shear stresses:
+            sigma_1 = 19.85, sigma_2 = 12.95, sigma_3 = -6.80,
+            tau_12 = 3.45, tau_23 = 9.87, tau_13 = 13.33.
+        </p>
+
+        <img src="images/mathlove/MohrsCircle2_18_6.jpg" class="project-image-full" alt="3D Mohr's circle for a given stress state">
+        <p class="caption">
+            Generated 3D Mohr's circle for the provided stress tensor.
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Akhil Gharpurey</p>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

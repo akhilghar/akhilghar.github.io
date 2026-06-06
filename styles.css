@@ -317,6 +317,14 @@ a:hover {
     border-radius: 12px;
 }
 
+.caption {
+    max-width: 850px;
+    margin: -8px auto 24px;
+    font-size: 0.95rem;
+    color: var(--text-soft);
+    text-align: center;
+}
+
 .video-embed {
     position: relative;
     width: 100%;
